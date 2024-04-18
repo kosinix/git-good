@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Git Good</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    
+    <body>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto">
+                    <header class="text-center mb-5">
+                        <h1 class="h1">Bootcamp Leg 4 - Git Good</h1>
+                        <p>Get Good at Using Git</p>
+                        <div class="alert alert-info">Demo on collaborative workflow in Git.</div>
+                    </header>
+                    <h3 class="h3 text-center">Authors</h3>
+                    <div class="d-flex flex-wrap justify-content-center mb-4">
+                        {% for author in authors %}
+                        <div class="m-1 round">
+                            <img src="/images/authors/{{author}}" alt="">
+                        </div>
+                       {% endfor %}
+                    </div>
+                    <hr>
+                    <h3 class="h3 text-center">Participants</h3>
+                    <h3 class="h4 text-center">BSCS 3A</h3>
+                    <div class="d-flex flex-wrap justify-content-center mb-4">
+                        {% for author in bscs3a %}
+                        <div class="m-1 round">
+                            <img src="/images/bscs3a/{{author}}" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="h4 text-center">BSIT 3A</h3>
+                            <div class="d-flex flex-wrap justify-content-center mb-4">
+                                {% for author in bsit3a %}
+                                <div class="m-1 round">
+                                    <img src="/images/bsit3a/{{author}}" alt="">
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h4 text-center">BSIT 3B</h3>
+                            <div class="d-flex flex-wrap justify-content-center mb-4">
+                                {% for author in bsit3b %}
+                                <div class="m-1 round">
+                                    <img src="/images/bsit3b/{{author}}" alt="">
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="h4 text-center">BSIT 3C</h3>
+                            <div class="d-flex flex-wrap justify-content-center mb-4">
+                                {% for author in bsit3c %}
+                                <div class="m-1 round">
+                                    <img src="/images/bsit3c/{{author}}" alt="">
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="/js/jquery.slim.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
